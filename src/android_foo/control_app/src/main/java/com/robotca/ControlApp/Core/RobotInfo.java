@@ -75,7 +75,7 @@ public class RobotInfo implements Comparable<RobotInfo>, Savable {
     public RobotInfo() {
         //id = UUID.randomUUID();
         name = "Robot" + robotCount++;
-        masterUriString = "http://localhost:11311";
+        masterUriString = "http://192.168.100.122:11311";
         joystickTopic = "/cmd_vel";
         cameraTopic = "/camera/rgb/image_raw/compressed";
         laserTopic = "/scan";
@@ -381,7 +381,7 @@ public class RobotInfo implements Comparable<RobotInfo>, Savable {
     public void load(@NonNull Bundle bundle) {
         id = UUID.fromString(bundle.getString(UUID_KEY, UUID.randomUUID().toString()));
         name = bundle.getString(ROBOT_NAME_KEY, "");
-        masterUriString = bundle.getString(MASTER_URI_KEY, "http://localhost:11311");
+        masterUriString = bundle.getString(MASTER_URI_KEY, "http://192.168.100.122:11311");
         joystickTopic = bundle.getString(JOYSTICK_TOPIC_KEY, "/cmd_vel");
         cameraTopic = bundle.getString(CAMERA_TOPIC_KEY, "/camera/rgb/image_raw/compressed");
         laserTopic = bundle.getString(LASER_SCAN_TOPIC_KEY, "/scan");
