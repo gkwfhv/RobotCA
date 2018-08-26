@@ -131,7 +131,7 @@
             android:title="@string/laser_scan_detail_pref_title" />
 
         <com.robotca.ControlApp.Views.BetterEditTextPreference
-            android:defaultValue="2.0"
+            android:defaultValue="3.0"
             android:inputType="numberDecimal"
             android:key="edittext_random_walk_range_proximity"
             android:singleLine="true"

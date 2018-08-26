@@ -51,7 +51,14 @@ public class OverviewFragment extends RosFragment {
 
             //noinspection unchecked
             cameraView = (RosImageView) view.findViewById(R.id.camera_view);
-            cameraView.setTopicName(PreferenceManager.getDefaultSharedPreferences(getActivity()).getString("edittext_camera_topic", getString(R.string.camera_topic)));
+            String imageTopic = PreferenceManager.getDefaultSharedPreferences(view.getContext())
+                .getString(view.getContext().getString(R.string.prefs_camera_topic_edittext_key),
+                        view.getContext().getString(R.string.camera_topic));
+            Log.w("setCustom topic is ", imageTopic);
+            if(imageTopic.isEmpty())
+                cameraView.setTopicName(PreferenceManager.getDefaultSharedPreferences(getActivity()).getString("edittext_camera_topic", getString(R.string.camera_topic)));
+            else
+                cameraView.setTopicName(imageTopic);
             cameraView.setMessageType(CompressedImage._TYPE);
             cameraView.setMessageToBitmapCallable(new BitmapFromCompressedImage());
 
