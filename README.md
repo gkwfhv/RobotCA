@@ -98,7 +98,16 @@ Dependencies:
 
 ![Main Layout](https://cloud.githubusercontent.com/assets/8508489/14839460/0201419c-0bf9-11e6-82c9-8e51ce85d48c.png)  
 
+![Main Layout](https://raw.githubusercontent.com/iamzhuang/test1/master/app_cam.png) 
+ 
 Client Information:  
 Dr. Ioannis Rekleitis  
 Assistant Professor  
 University of South Carolina  
+
+#### 联系我
+画一画二维码，加入我们，一起学习支持ROS技术发展。
+ROS机器人操作系统QQ群号: 8346256
+![Main Layout](https://raw.githubusercontent.com/iamzhuang/test1/master/ROS_QRCODE.png) 
+
+
