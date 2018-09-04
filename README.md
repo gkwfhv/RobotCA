@@ -107,7 +107,7 @@ University of South Carolina
 
 #### 联系我
 
-画一画二维码，加入我们，一起学习支持ROS技术发展。
+QQ扫一扫二维码，加入我们，一起学习支持ROS技术发展。
 ROS机器人操作系统QQ群号: [8346256](https://jq.qq.com/?_wv=1027&k=5sKaEzQ)
 
 ![Main Layout](https://raw.githubusercontent.com/iamzhuang/test1/master/ROS_QRCODE.png) 
